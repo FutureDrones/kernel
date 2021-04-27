@@ -33,14 +33,11 @@ KERNEL_DIR=$(pwd)
 IMAGE="${KERNEL_DIR}/out/arch/arm64/boot/Image.gz-dtb"
 TANGGAL=$(date +"%Y%m%d-%H")
 BRANCH="$(git rev-parse --abbrev-ref HEAD)"
-PATH="${KERNEL_DIR}/clang/bin:${KERNEL_DIR}/gcc/bin:${KERNEL_DIR}/gcc32/bin:${PATH}"
-export KBUILD_COMPILER_STRING="$(${KERNEL_DIR}/clang/bin/clang --version | head -n 1 | perl -pe 's/\(http.*?\)//gs' | sed -e 's/  */ /g')"
-export ARCH=arm64
 export KBUILD_BUILD_USER=mad
 export KBUILD_BUILD_HOST=disney
 start
 make cust_defconfig O=out CC=clang+
-make -j$(nproc --all) O=out CC=clang LD=ld.lld AR=llvm-ar NM=llvm-nm OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump STRIP=llvm-strip CROSS_COMPILE_ARM32=arm-linux-androideabi- CROSS_COMPILE=aarch64-linux-android- CLANG_TRIPLE=aarch64-linux-gnu-
+make -j$(nproc --all) O=out CC=clang LD=ld.lld AR=llvm-ar NM=llvm-nm OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump STRIP=llvm-strip
 cd AnyKernel
 cp ../out/arch/arm64/boot/Image.gz-dtb .
 cp ../out/arch/arm64/boot/dtbo.img .
