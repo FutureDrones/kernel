@@ -6,7 +6,7 @@ function start() {
         -d chat_id="$chat_id" \
         -d "disable_web_page_preview=true" \
         -d "parse_mode=html" \
-        -d text="<b>• DeOxyKernel •</b>%0ABuild started on <code>Drone CI</code>%0A <b>For device</b> <i>curtana</i>%0A<b>branch:-</b> <code>$(git rev-parse --abbrev-ref HEAD)</code>(master)%0A<b>Under commit</b> <code>$(git log --pretty=format:'"%h : %s"' -1)</code>%0A<b>Using compiler:- </b> <code>Clang 5484270</code>%0A<b>Started on:- </b> <code>$(date)</code>%0A<b>Build Status:</b> #BETA"
+        -d text="<b>• DeOxyKernel •</b>%0ABuild started on <code>Drone CI</code>%0A <b>For device</b> <i>miatoll</i>%0A<b>branch:-</b> <code>$(git rev-parse --abbrev-ref HEAD)</code>(master)%0A<b>Under commit</b> <code>$(git log --pretty=format:'"%h : %s"' -1)</code>%0A<b>Using compiler:- </b> <code>Clang 5484270</code>%0A<b>Started on:- </b> <code>$(date)</code>%0A<b>Build Status:</b> #BETA"
 }
 
 # sudo apt-get update -y
@@ -19,7 +19,7 @@ function push() {
         -F chat_id="$chat_id" \
         -F "disable_web_page_preview=true" \
         -F "parse_mode=html" \
-        -F caption="Build finished on $(date) | For <b>curtana / miatoll</b> | @mango_ci "
+        -F caption="Build finished on $(date) | For <b>miatoll</b> | @mango_ci "
 }
 
 git clone --depth=1 --single-branch --recurse-submodules https://github.com/jamiehoszeyui/deoxy work
