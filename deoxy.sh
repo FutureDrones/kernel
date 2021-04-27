@@ -37,7 +37,7 @@ export KBUILD_BUILD_USER=mad
 export KBUILD_BUILD_HOST=disney
 start
 make cust_defconfig O=out CC=clang+
-make -j$(nproc --all) O=out CC=clang LD=ld.lld AR=llvm-ar NM=llvm-nm OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump STRIP=llvm-strip
+make -j$(nproc --all) O=out CC=clang LD=ld.lld AR=llvm-ar NM=llvm-nm OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump STRIP=llvm-strip CROSS_COMPILE_ARM32=arm-linux-androideabi- CROSS_COMPILE=aarch64-linux-android- CLANG_TRIPLE=aarch64-linux-gnu-
 cd AnyKernel
 cp ../out/arch/arm64/boot/Image.gz-dtb .
 cp ../out/arch/arm64/boot/dtbo.img .
