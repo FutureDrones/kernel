@@ -33,6 +33,7 @@ KERNEL_DIR=$(pwd)
 IMAGE="${KERNEL_DIR}/out/arch/arm64/boot/Image.gz-dtb"
 TANGGAL=$(date +"%Y%m%d-%H")
 BRANCH="$(git rev-parse --abbrev-ref HEAD)"
+export ARCH=arm64
 export KBUILD_BUILD_USER=mad
 export KBUILD_BUILD_HOST=disney
 start
