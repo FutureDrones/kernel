@@ -14,7 +14,7 @@ steps:
       - git config --global user.name "me"
       - git config --global user.email "me@gmail.com"
       - git config --global color.ui false
-      - sudo chmod -R 0777 .
+      - chmod -R 0777 .
       - git clone https://github.com/FutureDrones/kernel kernel/
       - cd kernel
       - bash deoxy.sh
