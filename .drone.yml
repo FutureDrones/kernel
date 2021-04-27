@@ -3,7 +3,7 @@ name: Drone
 
 steps:
  - name: compile
-   image: apon77/aosp:latest
+   image: dereference23/kernel_arm64:clang
    environment:
      token:
        from_secret: token

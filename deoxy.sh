@@ -9,8 +9,8 @@ function start() {
         -d text="<b>• DeOxyKernel •</b>%0ABuild started on <code>Drone CI</code>%0A <b>For device</b> <i>curtana</i>%0A<b>branch:-</b> <code>$(git rev-parse --abbrev-ref HEAD)</code>(master)%0A<b>Under commit</b> <code>$(git log --pretty=format:'"%h : %s"' -1)</code>%0A<b>Using compiler:- </b> <code>Clang 5484270</code>%0A<b>Started on:- </b> <code>$(date)</code>%0A<b>Build Status:</b> #BETA"
 }
 
-sudo apt-get update -y
-sudo apt-get install bc cpio build-essential zip curl libstdc++6 git wget python2 gcc clang libssl-dev rsync flex bison -y
+# sudo apt-get update -y
+# sudo apt-get install bc cpio build-essential zip curl libstdc++6 git wget python2 gcc clang libssl-dev rsync flex bison -y
 
 function push() {
     cd AnyKernel
