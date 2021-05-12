@@ -99,12 +99,12 @@ fi
 
 # Setup
 echo "Setting up.."
-sudo apt-get -y update 
-sudo apt-get install bc cpio build-essential zip curl libstdc++6 git wget python2 gcc clang libssl-dev rsync flex bison -y
+apt-get -y update 
+apt-get install bc cpio build-essential zip curl libstdc++6 git wget python2 gcc clang libssl-dev rsync flex bison -y
 git config --global user.name "JamieHoSzeYui"
 git config --global user.email "wileylau@gmail.com"
 git config --global color.ui false
-sudo update-alternatives --install /usr/bin/python python /usr/bin/python2.7 1 #Python2 supremacy
+update-alternatives --install /usr/bin/python python /usr/bin/python2.7 1 #Python2 supremacy
 python -V 
 
 echo "Cloning dependencies"
