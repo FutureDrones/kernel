@@ -86,6 +86,12 @@ elif [[ $1 = lava-vdso ]]; then
     AKBRANCH=lancelot
     KNAME="Dream but VDSO"
     ZIPNAME="Dream-vDSO-lava-TwentySeven-BETA"
+elif [[ $1 = star ]]; then 
+    SAUCE="https://github.com/JamieHoSzeYui/hal3storm"
+    DEFCONFIG=exynos9810-star2lte_defconfig
+    AKBRANCH=lancelot
+    KNAME="hal3storm"
+    ZIPNAME="hal3storm-star2lte-BETA"
 else 
     echo "What the fuck ???"
     exit 
