@@ -41,7 +41,7 @@ update-alternatives --install /usr/bin/python python /usr/bin/python2.7 1 #Pytho
 python -V 
 
 echo "Cloning dependencies"
-git clone --depth=1 --single-branch $kernal build 
+$kernal
 
 cd build 
 git clone --depth=1 https://github.com/crdroidandroid/android_prebuilts_clang_host_linux-x86_clang-5484270 -b 9.0 clang
