@@ -9,7 +9,7 @@ steps:
        from_secret: token
      chat_id:
        from_secret: chat_id
-     supersexyrepo:
+     kernal:
        from_secret: kernal
    commands:
 #       - apt-get -y update && apt-get -y upgrade && apt-get -y install bc build-essential zip curl libstdc++6 git wget python gcc clang libssl-dev repo rsync flex bison
@@ -19,4 +19,4 @@ steps:
       - chmod -R 0777 .
       - git clone https://github.com/FutureDrones/kernel kernel/
       - cd kernel
-      - bash complex.sh lancelot
+      - bash skyfall.sh lancelot
