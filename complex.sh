@@ -56,6 +56,12 @@ elif [[ $1 = star ]]; then
     AKBRANCH=lancelot
     KNAME="hal3storm"
     ZIPNAME="hal3storm-star2lte-BETA"
+elif [[ $1 = blueline ]]; then 
+    SAUCE="https://github.com/JamieHoSzeYui/brutalstar"
+    DEFCONFIG=blueline_defconfig
+    AKBRANCH=blueline
+    KNAME="Brutalstar"
+    ZIPNAME="brutalstar-blueline-BETA"
 else 
     echo "What the fuck ???"
     exit 
