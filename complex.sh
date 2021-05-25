@@ -70,7 +70,7 @@ fi
 # Setup
 echo "Setting up.."
 apt-get -y update 
-apt-get install bc cpio build-essential zip curl libstdc++6 git wget python2 gcc clang libssl-dev rsync flex bison -y
+apt-get install bc cpio build-essential device-tree-compiler zip curl libstdc++6 git wget python2 gcc clang libssl-dev rsync flex bison -y
 git config --global user.name "JamieHoSzeYui"
 git config --global user.email "wileylau@gmail.com"
 git config --global color.ui false
