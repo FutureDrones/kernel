@@ -129,7 +129,7 @@ ls AnyKernel/
 # Zipping
 zipping() {
     cd AnyKernel || exit 1
-    cp ../out/arch/arm64/boot/Image.gz-dtb .
+    cp ../out/arch/arm64/boot/Image*-dtb .
     zip -r9 $ZIPNAME-${TANGGAL}.zip *
     cd ..
 }
@@ -167,7 +167,7 @@ start
 compile
 module
 zipping
-if [[ -f AnyKernel/Image.gz-dtb ]]; then 
+if [[ -f AnyKernel/*-dtb ]]; then 
     push
 else
     finerr
