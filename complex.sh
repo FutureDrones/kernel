@@ -96,6 +96,8 @@ export KBUILD_COMPILER_STRING="$(${KERNEL_DIR}/clang/bin/clang --version | head 
 export ARCH=arm64
 export KBUILD_BUILD_USER=mad
 export KBUILD_BUILD_HOST=disney
+export LD_LIBRARY_PATH="${KERNEL_DIR}/clang/lib64/:$LD_LIBRARY_PATH"
+export LD=ld.lld
 
 make O=out ARCH=arm64 $DEFCONFIG
 
