@@ -70,17 +70,14 @@ fi
 # Setup
 echo "Setting up.."
 apt-get -y update 
-apt-get install bc cpio build-essential zip curl libstdc++6 git wget python2 gcc clang libssl-dev rsync flex bison -y
+apt-get install bc cpio build-essential zip curl libstdc++6 git wget python2 gcc clang libssl-dev rsync flex bison unzip -y
 git config --global user.name "JamieHoSzeYui"
 git config --global user.email "wileylau@gmail.com"
 git config --global color.ui false
 update-alternatives --install /usr/bin/python python /usr/bin/python2.7 1 #Python2 supremacy
-cp wahoo_kernel_tools/bin/* /bin/
-cp wahoo_kernel_tools/lib64/* /lib64/
+cp wahoo-kernel-tools/bin/* /bin/
+cp wahoo-kernel-tools/lib64/* /lib64/
 python -V 
-
-wget https://forum.xda-developers.com/attachments/wahoo-kernel-tools-zip.4312566/
-unzip wahoo-kernel-tools.zip 
 
 echo "Cloning dependencies"
 git clone --depth=1 --single-branch $SAUCE build 
