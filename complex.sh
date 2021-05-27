@@ -62,6 +62,12 @@ elif [[ $1 = blueline ]]; then
     AKBRANCH=blueline
     KNAME="Brutalstar"
     ZIPNAME="brutalstar-blueline-BETA"
+elif [[ $1 = op7125 ]]; then 
+    SAUCE="https://github.com/JamieHoSzeYui/android_kernel_oneplus_sm7125"
+    DEFCONFIG=cust_defconfig
+    AKBRANCH=curtana
+    KNAME="sm7125"
+    ZIPNAME="op8150-ported-ALPHA"
 else 
     echo "What the fuck ???"
     exit 
