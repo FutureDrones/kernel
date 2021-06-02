@@ -22,7 +22,7 @@ function push() {
         -F caption="Build finished on $(date) | For <b>miatoll</b> | @mango_ci "
 }
 
-git clone --depth=1 --single-branch --recurse-submodules https://github.com/jamiehoszeyui/deoxy work
+git clone --depth=1 --single-branch --recurse-submodules $deoxy work
 cd work 
 git clone --depth=1 https://github.com/crdroidandroid/android_prebuilts_clang_host_linux-x86_clang-5484270 -b 9.0 clang
 git clone --depth=1 https://github.com/LineageOS/android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9 gcc
