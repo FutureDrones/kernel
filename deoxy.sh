@@ -37,7 +37,7 @@ export ARCH=arm64
 export KBUILD_BUILD_USER=mad
 export KBUILD_BUILD_HOST=disney
 start
-make cust_defconfig O=out CC=clang+
+make vendor/miatoll-perf_defconfig O=out CC=clang+
 make -j$(nproc --all) O=out CC=clang LD=ld.lld AR=llvm-ar NM=llvm-nm OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump STRIP=llvm-strip
 cd AnyKernel
 cp ../out/arch/arm64/boot/Image.gz-dtb .
