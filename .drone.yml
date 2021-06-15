@@ -21,4 +21,4 @@ steps:
       - chmod -R 0777 .
       - git clone https://github.com/FutureDrones/kernel kernel/
       - cd kernel
-      - bash skyfall.sh
+      - bash skyfall.sh lancelot
