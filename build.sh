@@ -49,7 +49,7 @@ INSTALL_MOD_PATH=../modules \
 INSTALL_MOD_STRIP=1 \
 modules_install
 }
-
+ 
 ls out/arch/arm64/boot 
 
 ls AnyKernel/
