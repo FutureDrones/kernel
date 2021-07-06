@@ -10,7 +10,7 @@ STATUS=ALPHA
 ZIP="AnyKernel/*.zip"
 
 if [[ $1 = curtana ]]; then 
-    SAUCE="-b dreams https://github.com/JamieHoSzeYui/mango414"
+    SAUCE="https://github.com/JamieHoSzeYui/mango414"
     DEFCONFIG=cust_defconfig 
     KNAME=MangoWIP
     AKBRANCH=curtana 
