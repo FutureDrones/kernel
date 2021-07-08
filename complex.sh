@@ -11,7 +11,7 @@ ZIP="AnyKernel/*.zip"
 
 if [[ $1 = curtana ]]; then 
     SAUCE="https://github.com/JamieHoSzeYui/mango414"
-    DEFCONFIG=vendor/curtana-perf_defconfig 
+    DEFCONFIG=cust_defconfig
     KNAME=MangoWIP
     AKBRANCH=curtana 
     ZIPNAME="mango0414-curtana-OP"
