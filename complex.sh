@@ -68,6 +68,12 @@ elif [[ $1 = op7125 ]]; then
     AKBRANCH=curtana
     KNAME="sm7125"
     ZIPNAME="op8150-ported-ALPHA"
+elif [[ $1 = cheems ]]; then 
+    SAUCE=https://github.com/JamieHoSzeYui/mango409
+    DEFCONFIG=mango_defconfig
+    AKBRANCH=cheemsburger
+    KNAME="Mango"
+    ZIPNAME="mango409-cheeseburger-BETA"
 else 
     echo "What the fuck ???"
     exit 
